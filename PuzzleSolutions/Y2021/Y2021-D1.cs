@@ -10,7 +10,17 @@ namespace PuzzleSolutions.Y2021
         public static string SolvePart1()
         {
             List<int> puzzleInput = MyIO.ReadIntsFromFile(2021, 1, 1);
-            return "I Haven't Solved part 1 yet!";
+            int bigger = 0;
+            for (int i = 1; i < puzzleInput.Count; i++)
+            {
+                if (puzzleInput[i] > puzzleInput[i - 1])
+                {
+                    bigger += 1;
+                }
+            }
+
+
+            return bigger;
         }
 
         public static string SolvePart2()
