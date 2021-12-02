@@ -20,7 +20,7 @@ namespace PuzzleSolutions.Y2021
             }
 
 
-            return bigger;
+            return $"{bigger}";
         }
 
         public static string SolvePart2()
