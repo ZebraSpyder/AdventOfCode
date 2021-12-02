@@ -28,7 +28,7 @@ namespace PuzzleSolutions.Y2021
             List<int> puzzleInput = MyIO.ReadIntsFromFile(2021, 1, 1);
 
             int bigger = 0;
-            for (int i = 1; i + 3 < puzzleInput.Count; i++)
+            for (int i = 0; i + 3 < puzzleInput.Count; i++)
             {
                 int sum1 = puzzleInput[i] + puzzleInput[i+1] + puzzleInput[i+2];
                 int sum2 = puzzleInput[i+1] + puzzleInput[i+2] + puzzleInput[i+3];
